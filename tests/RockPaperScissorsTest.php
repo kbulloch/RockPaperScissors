@@ -35,6 +35,20 @@
             $this->assertEquals("DRAW", $result);
         }
 
+        function test_RockPaperScissors_ScissorsDraw()
+        {
+            //Arrange
+            $scissors_draw = new RockPaperScissors;
+            $p1_input = "SCISSORS";
+            $p2_input = "SCISSORS";
+
+            //Act
+            $result = $scissors_draw->runGame($p1_input, $p2_input);
+
+            //Assert
+            $this->assertEquals("DRAW", $result);
+        }
+
     }
 
 ?>

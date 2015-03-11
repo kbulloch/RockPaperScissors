@@ -17,7 +17,7 @@
         $rock_paper_scissors = new RockPaperScissors;
         $winner = $rock_paper_scissors->runGame($_GET['player1'], $_GET['player2']);
 
-        return $app['twig']->render('winner.twig', array('results' => $winner));
+        return $app['twig']->render('winner.twig', array('results' => $winner, 'player1choice' => $_GET['player1'], 'player2choice' => $_GET['player2'], 'computer_choice' => $GLOBALS['player2choice']));
     });
 
     return $app;

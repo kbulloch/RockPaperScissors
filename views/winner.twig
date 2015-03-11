@@ -7,6 +7,13 @@
     <div class = "container">
         <h1>The winner is...</h1>
         <h2>{{ results }}</h2>
+        <h4>Player 1 threw {{ player1choice }}</h4>
+        {% if player2choice is not empty %}
+            <h4>Player 2 threw {{ player2choice }}</h4>
+        {% endif %}
+        {% if player2choice is empty %}
+            <h4>Player 2 threw {{ computer_choice }}</h4>
+        {% endif %}
     </div>
 </body>
 </html>

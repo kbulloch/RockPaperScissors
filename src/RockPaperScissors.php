@@ -8,6 +8,24 @@
             $p1_input = strtoupper($p1_input);
             $p2_input = strtoupper($p2_input);
 
+            $GLOBALS['player2choice'] = "";
+
+            if ($p2_input == null) {
+                $choice = rand(0, 2);
+                switch ($choice) {
+                    case 0:
+                        $p2_input = "ROCK";
+                        break;
+                    case 1:
+                        $p2_input = "SCISSORS";
+                        break;
+                    case 2:
+                        $p2_input = "PAPER";
+                        break;
+                }
+                $GLOBALS['player2choice'] = $p2_input;
+            }
+
             if ($p1_input === $p2_input) {
                 return "DRAW";
             }

@@ -32,6 +32,9 @@
                     case "SCISSORS":
                         return "Player 1 wins";
                         break;
+                    case "PAPER":
+                        return "Player 2 wins";
+                        break;
                 }
             }
 

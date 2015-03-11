@@ -77,6 +77,21 @@
             $this->assertEquals("Player 1 wins", $result);
         }
 
+        function test_RockPaperScissors_RockVsScissors()
+        {
+            //Arrange
+            $rock_vs_scissors = new RockPaperScissors;
+            $p1_input = "ROCK";
+            $p2_input = "SCISSORS";
+
+            //Act
+            $result = $rock_vs_scissors->runGame($p1_input, $p2_input);
+
+            //Assert
+            $this->assertEquals("Player 1 wins", $result);
+
+        }
+
     }
 
 ?>

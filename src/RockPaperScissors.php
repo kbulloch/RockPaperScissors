@@ -27,6 +27,13 @@
                         break;
                 }
             }
+            if ($p1_input === "ROCK") {
+                switch ($p2_input) {
+                    case "SCISSORS":
+                        return "Player 1 wins";
+                        break;
+                }
+            }
 
         }
 

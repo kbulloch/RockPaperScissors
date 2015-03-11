@@ -25,6 +25,9 @@
                     case "PAPER":
                         return "Player 1 wins";
                         break;
+                    case "ROCK":
+                        return "Player 2 wins";
+                        break;
                 }
             }
             if ($p1_input === "ROCK") {
